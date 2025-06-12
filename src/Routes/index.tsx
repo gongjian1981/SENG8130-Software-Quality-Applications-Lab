@@ -1,4 +1,5 @@
 import about from './about'
+import heatmap from './heatmap';
 
 export const appRoutes = [
   {
@@ -6,6 +7,7 @@ export const appRoutes = [
     element: <HomePage />,
   },
   about,
+  heatmap,
 ];
 
 import { useNavigate } from 'react-router-dom';
@@ -22,7 +24,12 @@ function HomePage() {
       >
         Go to About
       </button>
-
+      <button
+        onClick={() => navigate('/heatmap')}
+        className="bg-green-600 text-black px-4 py-2 rounded ml-2"
+      >
+        Go to heatmap
+      </button>
     </div>
   );
 }
