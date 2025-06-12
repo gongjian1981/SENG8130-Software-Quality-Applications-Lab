@@ -1,5 +1,5 @@
 import { filterEvaluationsByMonth } from './filter-evaluations';
-import type { EvaluationItem } from '../../Types/evaluation';
+import type { EvaluationItem } from '../Types/evaluation';
 
 describe('filterEvaluationsByMonth', () => {
   const mockData: EvaluationItem[] = [

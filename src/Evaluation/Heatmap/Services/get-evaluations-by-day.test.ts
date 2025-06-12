@@ -1,5 +1,5 @@
 import { getEvaluationsByDay } from './get-evaluations-by-day';
-import type { EvaluationItem } from '../../Types/evaluation';
+import type { EvaluationItem } from '../Types/evaluation';
 
 describe('getEvaluationsByDay', () => {
   const mockData: EvaluationItem[] = [
