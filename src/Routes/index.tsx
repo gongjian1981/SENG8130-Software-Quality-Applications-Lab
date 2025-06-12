@@ -1,5 +1,8 @@
 import about from './about'
 import heatmap from './heatmap';
+import daily from './daily';
+import upload from './upload';
+
 
 export const appRoutes = [
   {
@@ -8,6 +11,8 @@ export const appRoutes = [
   },
   about,
   heatmap,
+  daily,
+  upload,
 ];
 
 import { useNavigate } from 'react-router-dom';

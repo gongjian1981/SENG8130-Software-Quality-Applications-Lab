@@ -88,7 +88,7 @@ const HeatmapPage: React.FC<HeatmapPageProps> = ({ data, onNavigate }) => {
           {(() => {
             const rows: React.ReactElement[] = [];
             let cells: React.ReactElement[] = [];
-            for (let day of daysArray) {
+            for (const day of daysArray) {
               const date = new Date(selectedYear, selectedMonth - 1, day);
               const weekday = date.getDay();
 
